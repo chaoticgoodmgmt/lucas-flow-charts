@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flow Chart Maker for Lucas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <div class="left">
+            <a href="#" style="color: black;">Flow Chart Maker for Lucas</a>
+        </div>
+        <div class="right">
+            <button id="addDecision">Add Decision</button>
+            <button id="createConnection">Create Connection</button>
+            <button id="deleteDecision">Delete Decision</button>
+            <button id="renameDecision">Rename Decision</button>
+            <button id="addTitle">Add Title</button>
+            <button id="downloadPDF">Download as PDF</button>
+            <button id="extendHorizontal">Extend Canvas Horizontally</button>
+            <button id="extendVertical">Extend Canvas Vertically</button>
+        </div>
+    </div>
+    
+    <div class="content" id="canvasContainer">
+        <div id="documentTitle" class="document-title">Untitled Document</div>
+        <div id="canvas"></div>
+        <canvas id="connectionCanvas"></canvas>
+    </div>
+    
+    <!-- Include External Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsPlumb/2.14.7/js/jsplumb.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.4/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.4/vfs_fonts.js"></script>
+    
+    <!-- Include Your JavaScript File -->
+    <script src="app.js"></script>
+</body>
+</html>

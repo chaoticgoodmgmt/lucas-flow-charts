@@ -1,0 +1,99 @@
+/* Import the GGX89 Regular font */
+@font-face {
+    font-family: 'GGX89 Regular';
+    src: url('ggx89-regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'GGX89 Regular', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #ffffff;
+    color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 32px;
+    font-family: 'GGX89 Regular', Arial, sans-serif;
+}
+
+.right button {
+    margin-left: 10px;
+    font-family: 'GGX89 Regular', Arial, sans-serif;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.right button:hover {
+    background-color: gold;
+    color: black;
+}
+
+.content {
+    position: relative;
+    padding: 20px;
+    width: 100%;
+    height: 80vh;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    overflow: auto; /* Allow scrolling both ways */
+}
+
+#canvas {
+    position: relative;
+    z-index: 1;
+    margin-top: 40px;
+    width: 2000px; /* Set large width for scrolling */
+    height: 2000px; /* Set large height for scrolling */
+}
+
+#connectionCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.decision {
+    background-color: white; /* White background */
+    color: black; /* Black text */
+    border: 2px solid black; /* Black outline */
+    padding: 10px; /* Original padding */
+    border-radius: 4px; /* Original rounded corners */
+    position: absolute;
+    cursor: move;
+    width: 100px; /* Original width */
+    height: 60px; /* Original height */
+    text-align: center;
+    font-size: 14px; /* Adjusted font size */
+    font-family: 'GGX89 Regular', Arial, sans-serif;
+}
+
+.selected {
+    border: 2px solid gold; /* Gold selection border */
+}
+
+.document-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-family: 'GGX89 Regular', Arial, sans-serif;
+}
